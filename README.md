@@ -26,7 +26,29 @@ Include the script as in the below example, and simply add `resizer` to your ent
   </body>
 ```
 # Recommended
-Use the `resizer` component in combination a `look-at` component to ensure your labels are always legible not just in terms of distance but also the entities rotation relative to the camera. Examples of those components can be found [here](https://www.npmjs.com/package/aframe-look-at-component) and [here](https://github.com/blairmacintyre/aframe-look-at-billboard-component)
+Use the `resizer` component in combination a `look-at` component to ensure your labels are always legible not just in terms of distance but also the entities rotation relative to the camera. Examples of those components can be found [here](https://www.npmjs.com/package/aframe-look-at-component) and [here](https://github.com/blairmacintyre/aframe-look-at-billboard-component). See below example of the 2 combined
+
+```html
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/elbobo/aframe-resizer-component/06b89743/dist/0.1/aframe-resizer-component.js"></script>
+    <script src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-text 
+          id="tester"
+          billboard
+          resizer
+          value="Hello!"
+          scale="0.3 0.3 0.3"
+          position="0 1.2 -3"
+          align="center"
+          color="black">
+        </a-text>
+    </a-scene>
+  </body>
+```
 
 # Notes
 The resizer works by adjusting the `scale` component of the entity therefore your `scale` attributes will be overwritten. It will maintain the proportions however so if for example you had `scale="1 2 1"` this proportion would be maintained.
