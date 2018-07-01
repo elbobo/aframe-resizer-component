@@ -1,7 +1,7 @@
 # aframe-resizer-component
 An A-frame component that resizes an object in relation to its distance from the camera, maintaining its perceived size by rescaling the entity for use with avatar labels, map labels or similar.
 
-![Resizer component demo](https://github.com/elbobo/aframe-resizer-component/blob/master/RESIZERDEMO.gif?raw=true)
+![Resizer component demo](https://github.com/elbobo/aframe-resizer-component/blob/master/RESIZERDEMO_update.gif?raw=true)
 
 # Usage
 Include the script as in the below example, and simply add `resizer` to your entity
@@ -26,7 +26,7 @@ Include the script as in the below example, and simply add `resizer` to your ent
   </body>
 ```
 # Recommended
-Use the `resizer` component in combination a `look-at` component to ensure your labels are always legible not just in terms of distance but also the entities rotation relative to the camera. Examples of those components can be found [here](https://www.npmjs.com/package/aframe-look-at-component) and [here](https://github.com/blairmacintyre/aframe-look-at-billboard-component). See below example of the 2 combined
+Use the `resizer` component in combination with a `look-at` component to ensure your labels are always legible not just in terms of distance but also the entities rotation relative to the camera. Examples of those components can be found [here](https://www.npmjs.com/package/aframe-look-at-component) and [here](https://github.com/blairmacintyre/aframe-look-at-billboard-component). See below example of the 2 combined
 
 ```html
   <head>
